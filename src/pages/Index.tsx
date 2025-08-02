@@ -11,7 +11,7 @@ const Index = () => {
       <header className="bg-white border-b">
         <div className="container mx-auto px-6 py-4">
           <nav className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-primary">ТехСервис</div>
+            <div className="text-2xl font-bold text-primary">Liberty LLC</div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-700 hover:text-primary transition-colors">Главная</a>
               <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
@@ -33,8 +33,8 @@ const Index = () => {
                 <span className="text-primary"> обслуживание</span> оборудования
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Профессиональный ремонт и техническое обслуживание промышленного оборудования. 
-                Быстро, качественно, с гарантией результата.
+                Liberty LLC - ведущая компания в области технического обслуживания и ремонта промышленного оборудования. 
+                Мы обеспечиваем полный цикл сервисного обслуживания с гарантией качества.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8">
@@ -84,7 +84,8 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши услуги</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Полный спектр услуг по техническому обслуживанию и ремонту промышленного оборудования
+              Liberty LLC предоставляет профессиональные услуги гарантийного и постгарантийного обслуживания 
+              промышленного оборудования ведущих мировых производителей
             </p>
           </div>
           
@@ -98,8 +99,8 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 leading-relaxed">
-                  Полное техническое обслуживание в рамках гарантийных обязательств. 
-                  Диагностика, профилактика и устранение неисправностей.
+                  Выполнение гарантийных обязательств производителей оборудования. 
+                  Плановое техническое обслуживание, диагностика, ремонт в рамках гарантии.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -113,8 +114,8 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 leading-relaxed">
-                  Качественный ремонт оборудования после истечения гарантийного срока. 
-                  Замена деталей, модернизация, восстановление работоспособности.
+                  Сервисное обслуживание и ремонт оборудования после окончания гарантийного периода. 
+                  Поставка запасных частей, модернизация, капитальный ремонт.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -128,9 +129,72 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center text-gray-600 leading-relaxed">
-                  Круглосуточная поддержка пользователей, консультации по эксплуатации, 
-                  удаленная диагностика и решение технических вопросов.
+                  Техническая поддержка специалистов Liberty LLC 24/7. 
+                  Консультации по эксплуатации, удаленная диагностика, оперативное решение проблем.
                 </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши сотрудники</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Команда высококвалифицированных специалистов Liberty LLC с многолетним опытом 
+              работы в области технического обслуживания промышленного оборудования
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+              <CardContent className="pt-8">
+                <img 
+                  src="/img/13a3776e-1ae4-479e-b324-196488923aa7.jpg" 
+                  alt="Алексей Петров - Технический директор"
+                  className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+                />
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Алексей Петров</h3>
+                <p className="text-primary font-semibold mb-3">Технический директор</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  15+ лет опыта в области технического обслуживания промышленного оборудования. 
+                  Сертифицированный специалист по системам автоматизации.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+              <CardContent className="pt-8">
+                <img 
+                  src="/img/e308a1de-3c4b-4734-8744-41f013823d1d.jpg" 
+                  alt="Марина Сидорова - Менеджер по сервису"
+                  className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+                />
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Марина Сидорова</h3>
+                <p className="text-primary font-semibold mb-3">Менеджер по сервису</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Координирует работу сервисной службы, контроль качества выполняемых работ. 
+                  Специалист по работе с клиентами и планированию сервисных работ.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+              <CardContent className="pt-8">
+                <img 
+                  src="/img/c83942dc-ffcf-42f0-8684-fe1d95964181.jpg" 
+                  alt="Дмитрий Козлов - Ведущий инженер"
+                  className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
+                />
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Дмитрий Козлов</h3>
+                <p className="text-primary font-semibold mb-3">Ведущий инженер</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Специалист по диагностике и ремонту сложного промышленного оборудования. 
+                  Эксперт по электронным системам управления и автоматизации.
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -144,12 +208,12 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">О компании</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Более 15 лет мы специализируемся на техническом обслуживании промышленного оборудования. 
-                Наша команда состоит из высококвалифицированных инженеров и техников с многолетним опытом работы.
+                Liberty LLC - надежный партнер в области технического обслуживания промышленного оборудования. 
+                Мы осуществляем комплексное сервисное обслуживание с полным соблюдением технологических регламентов.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Мы обслуживаем оборудование ведущих мировых производителей и гарантируем быстрое 
-                восстановление работоспособности вашего производства.
+                Наши специалисты имеют официальные сертификаты производителей оборудования и обеспечивают 
+                качественный сервис на всех этапах жизненного цикла оборудования.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
@@ -254,8 +318,8 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Телефон</h3>
-                    <p className="text-gray-600">+7 (495) 123-45-67</p>
-                    <p className="text-gray-600">+7 (800) 123-45-67 (бесплатно)</p>
+                    <p className="text-gray-600">+7 (495) 789-12-34</p>
+                    <p className="text-gray-600">+7 (800) 555-01-23 (бесплатно)</p>
                   </div>
                 </div>
                 
@@ -265,8 +329,8 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-                    <p className="text-gray-600">info@techservice.ru</p>
-                    <p className="text-gray-600">support@techservice.ru</p>
+                    <p className="text-gray-600">info@liberty-llc.ru</p>
+                    <p className="text-gray-600">support@liberty-llc.ru</p>
                   </div>
                 </div>
                 
@@ -276,7 +340,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Адрес</h3>
-                    <p className="text-gray-600">г. Москва, ул. Промышленная, д. 123</p>
+                    <p className="text-gray-600">г. Москва, Научный проезд, д. 8, оф. 301</p>
                     <p className="text-gray-600">Пн-Пт: 9:00-18:00, Сб-Вс: 10:00-16:00</p>
                   </div>
                 </div>
@@ -327,9 +391,9 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold mb-4">ТехСервис</div>
+              <div className="text-2xl font-bold mb-4">Liberty LLC</div>
               <p className="text-gray-400 mb-4">
-                Профессиональное обслуживание промышленного оборудования
+                Комплексное сервисное обслуживание промышленного оборудования
               </p>
               <div className="flex space-x-4">
                 <div className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
@@ -372,7 +436,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ТехСервис. Все права защищены.</p>
+            <p>&copy; 2024 Liberty LLC. Все права защищены.</p>
           </div>
         </div>
       </footer>
